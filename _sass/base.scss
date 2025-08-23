@@ -1,0 +1,178 @@
+@import 'colors.scss';
+
+$break-mobile: 768px;
+
+
+// Sectioning
+// ---------------------------------------------------------------------------
+
+html {
+    height: 100vh;
+    font-size: 18px;
+
+    background-color: $bg-color;
+    color: $text-color;
+
+    scroll-behavior: smooth;
+
+    @media (max-width: $break-mobile) {
+        font-size: 14px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        scroll-behavior: auto;
+    }
+}
+
+body {
+    height: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    margin: 0 auto;
+
+    nav {
+        margin: 0.25rem;
+    }
+}
+
+main {
+    min-height: 80%;
+    max-width: 48rem;
+    padding: 2rem;
+    margin: 0 auto;
+
+    @media (max-width: $break-mobile) {
+        padding: 2rem 1rem;
+    }
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+
+// Lists
+// ---------------------------------------------------------------------------
+// Note that Firefox breaks when `list-style-position` is `inside`
+// and the list contains a block element, e.g. `<p>`.
+// https://bugzilla.mozilla.org/show_bug.cgi?id=36854
+
+ul {
+    margin: 1rem;
+    padding-inline-start: 1.5rem;
+    list-style-position: outside;
+    list-style-type: disc;
+}
+
+ol {
+    margin: 1rem;
+    padding-inline-start: 1.5rem;
+    list-style-position: outside;
+    list-style-type: decimal;
+}
+
+dl {
+    margin: 1rem;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    padding-inline-start: 1.5rem;
+}
+
+
+// Tables
+// ---------------------------------------------------------------------------
+
+table {
+    border-collapse: collapse;
+    margin: 2rem auto;
+}
+
+caption {
+    margin: 0.5rem;
+}
+
+thead {
+    color: $bg-color;
+    background-color: $text-color;
+
+    position: sticky;
+    top: 0;
+
+    &>tr>th:first-child {
+        border-radius: 0.5rem 0 0 0;
+    }
+
+    &>tr>th:last-child {
+        border-radius: 0 0.5rem 0 0;
+    }
+}
+
+tfoot {
+    color: $bg-color;
+    background-color: $text-color;
+
+    &>tr>th:first-child {
+        border-radius: 0 0 0 0.5rem;
+    }
+
+    &>tr>th:last-child {
+        border-radius: 0 0 0.5rem 0;
+    }
+}
+
+th,
+td {
+    padding: 0.5rem;
+}
+
+tr:nth-child(even) {
+    background-color: darken($bg-color, 10%);
+}
+
+
+// Media & Widgets
+// ---------------------------------------------------------------------------
+
+svg {
+    height: 100%;
+    width: auto;
+}
+
+figure {
+    padding: 1rem;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 0.75rem;
+}
+
+canvas,
+video,
+audio,
+iframe {
+    width: 100%;
+}
+
+meter,
+progress {
+    width: 100%;
+}

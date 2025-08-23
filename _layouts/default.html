@@ -1,0 +1,54 @@
+---
+layout: compress
+---
+<!doctype html>
+<html lang='{{ page.lang | default: site.lang }}'>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta name='theme-color' content='#0B0B0B' />
+
+  <title>{{ page.title }}</title>
+
+  <link rel='icon' href='{{ "/assets/favicon.svg" | relative_url }}'>
+  <link rel='stylesheet' type='text/css' href='{{ "style.css" | relative_url }}'>
+  <link rel='sitemap' type='application/xml' href='{{ "sitemap.css" | relative_url }}'>
+  <link rel='license' href='{{ site.license.url }}'>
+
+  {% seo title=false %}
+</head>
+
+<body>
+
+  <header class='full-screen'>
+    <h1><a class='quiet-link' href='{{ "/" | relative_url }}'>{{ site.title }}</a></h1>
+    <nav id='main-nav'>
+      <h2 class='hidden'>Site Navigation</h2>
+      <ul class='inline-list'>
+        <li><a class='quiet-link' href='{{ "/#when" | relative_url }}'>When</a></li>
+        <li><a class='quiet-link' href='{{ "/#Where" | relative_url }}'>Where</a></li>
+        <li><a class='quiet-link' href='{{ "/#RSVP" | relative_url }}'>RSVP</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <ul class='inline-list'>
+      {% assign copydate = page.date | default: site.time %}
+      {% assign copydate_year = copydate | date: '%Y' %}
+      <li><small>&copy; <time datetime='{{ copydate_year }}'>{{ copydate_year }}</time> {{ site.author.name }}</small>
+      </li>
+      <li><small><a class='quiet-link' rel='license' href='{{ site.license.url }}'>{{ site.license.spdx }}</a></small>
+      </li>
+    </ul>
+  </footer>
+
+</body>
+
+</html>

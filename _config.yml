@@ -8,7 +8,7 @@
 # These variables can be accessed by templates, e.g. ``{{ site.myvariable }}``.
 
 ## General metadata
-title: Chris and Sarah's Wedding
+title: Chris & Sarah
 email: cbarrick1@example.com
 tagline: Official website for the wedding of Chris Barrick and Sarah Colquhoun
 description: >-
@@ -31,6 +31,5 @@ sass:
   style: compressed
 
 ## Plugins
-theme: minima
 plugins:
   - jekyll-feed

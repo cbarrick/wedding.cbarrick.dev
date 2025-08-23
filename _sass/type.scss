@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Variables
+// ---------------------------------------------------------------------------
+
+$body-font: "Roboto", sans-serif;
+$display-font: "Playfair Display", serif;
+$monospace-font: "Courier", monospace;
+
+
+// Elements
+// ---------------------------------------------------------------------------
+
+html {
+    font-family: $body-font;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: $display-font;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 2rem 0 1rem;
+}
+
+h2 {
+    font-family: $display-font;
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 2rem 0 1rem;
+
+    @media (max-width: $break-mobile) {
+        font-size: 2rem;
+    }
+}
+
+h3 {
+    font-family: $display-font;
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 2rem 0 1rem;
+}
+
+h4 {
+    font-family: $display-font;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+h5 {
+    font-family: $display-font;
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: italic;
+    margin: 1rem 0;
+}
+
+h6 {
+    font-family: $display-font;
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+    margin: 1rem 0;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+a {
+    color: $text-color;
+    text-decoration-line: underline;
+
+    svg {
+        fill: $text-color;
+    }
+
+    &:hover {
+        text-decoration-line: underline !important;
+        text-decoration-color: $link-color !important;
+
+        svg {
+            fill: $link-color;
+        }
+    }
+}
+
+blockquote {
+    border-left: 4px solid $text-color;
+    padding-left: 1rem;
+}
+
+cite {
+    font-style: italic;
+}
+
+pre {
+    font-family: $monospace-font;
+    font-size: 0.75rem;
+    padding: 1rem;
+    overflow-x: scroll;
+    z-index: 1;
+    font-variant-ligatures: none;
+
+    @media (max-width: $break-mobile) {
+        font-size: 1rem;
+    }
+
+    code {
+        white-space: pre;
+    }
+}
+
+code,
+kbd,
+samp {
+    font-family: $monospace-font;
+    padding: 0 0.25rem;
+    white-space: nowrap;
+    font-variant-ligatures: none;
+}
+
+mark {
+    background-color: $mark-color;
+}
+
+big {
+    font-size: 1.15rem;
+}
+
+small {
+    font-size: 0.85rem;
+}
+
+hr {
+    width: 80%;
+    margin: 2rem auto;
+    border: none; // Reset the user-agent.
+    border-bottom: 1px solid $text-color;
+}
