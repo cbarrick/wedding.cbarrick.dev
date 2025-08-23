@@ -32,4 +32,4 @@ sass:
 
 ## Plugins
 plugins:
-  - jekyll-feed
+  - jekyll-default-layout

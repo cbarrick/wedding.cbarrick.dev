@@ -3,17 +3,9 @@ source "https://rubygems.org"
 # We use Jekyll to build the site.
 gem "jekyll", "~> 3.10.0"
 
-# The github-pages gem transitively depends on all of the gems available
-# in the Github Pages build environment. With this, we can use any of
-# the Jekyll plugins available on Github.
-#
-# For a full list of plugins, see <https://pages.github.com/versions/>.
-gem "github-pages", group: :jekyll_plugins
-
-# Add additional Jekyll plugins here.
+# Add Jekyll plugins to this group.
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.6"
-  gem "minima", "~> 2.0" # The default theme for new Jekyll sites.
+  gem "github-pages"  # Includes all default plugins for github-pages
 end
 
 # Enables `jekyll serve`.
