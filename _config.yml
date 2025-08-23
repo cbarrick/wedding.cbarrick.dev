@@ -18,8 +18,8 @@ lang: en-US
 encoding: utf-8
 permalink: /:title
 license:
-  spdx: CC-BY-4.0
-  url: https://creativecommons.org/licenses/by/4.0/
+  spdx: CC-BY-SA-4.0
+  url: https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Canonical URL
 url: "https://wedding.cbarrick.dev"
