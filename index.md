@@ -3,11 +3,16 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+tall_header: true
+toc:
+  When: "#when"
+  Where: "#where"
+  RSVP: "#rsvp"
 ---
 
 <section class="full-screen dark" markdown="1">
 
-# Preamble
+# Preamble {#when}
 Whereas recognition of the inherent dignity and of the equal and inalienable
 rights of all members of the human family is the foundation of freedom, justice
 and peace in the world,
@@ -54,7 +59,7 @@ jurisdiction.
 
 <section class="full-screen" markdown="1">
 
-# Article 1
+# Article 1 {#where}
 All human beings are born free and equal in dignity and rights. They are endowed
 with reason and conscience and should act towards one another in a spirit of
 brotherhood.

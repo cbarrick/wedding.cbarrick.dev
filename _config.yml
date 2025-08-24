@@ -27,6 +27,8 @@ baseurl: ""
 
 ## Build settings
 markdown: kramdown
+kramdown:
+  input: Kramdown
 sass:
   style: compressed
 

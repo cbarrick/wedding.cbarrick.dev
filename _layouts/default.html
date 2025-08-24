@@ -22,16 +22,18 @@ layout: compress
 
 <body>
 
-  <header class='full-screen'>
+  <header class='{{ page.tall_header | replace: "true", "full-screen" }}'>
     <h1><a class='quiet-link' href='{{ "/" | relative_url }}'>{{ site.title }}</a></h1>
-    <nav id='main-nav'>
-      <h2 class='hidden'>Site Navigation</h2>
-      <ul class='inline-list'>
-        <li><a class='quiet-link' href='{{ "/#when" | relative_url }}'>When</a></li>
-        <li><a class='quiet-link' href='{{ "/#Where" | relative_url }}'>Where</a></li>
-        <li><a class='quiet-link' href='{{ "/#RSVP" | relative_url }}'>RSVP</a></li>
-      </ul>
-    </nav>
+    {% if page.toc %}
+      <nav id='main-nav'>
+        <h2 class='hidden'>Page Navigation</h2>
+        <ul class='inline-list'>
+          {% for link in page.toc %}
+            <li><a class='quiet-link' href='{{ link[1] | relative_url }}'>{{ link[0] }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    {% endif %}
   </header>
 
   <main>
