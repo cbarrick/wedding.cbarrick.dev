@@ -1,7 +1,38 @@
-// Main colors
+// Color definitions
 // ---------------------------------------------------------------------------
 
 $text-color: #0B0B0B;
 $link-color: #D3A121;
 $mark-color: #D3A121;
 $bg-color: #FAF4E4;
+
+
+// Themeing
+// ---------------------------------------------------------------------------
+// We use CSS custom properties for the theme. The custom properties are
+// overridden depending on the theme class (.light or .dark).
+//
+// We set the main components of the theme in a `*` rule, to force the
+// properties to always be reevaluated at the leaf level. This makes it easy
+// to propagate patrial theme changes (e.g. setting an element to .dark in an
+// otherwise .light context) without having to worry about at which level the
+// property gets set.
+
+* {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+:root {
+    @extend .light; // Default theme is light.
+}
+
+.light {
+    --bg-color: #{$bg-color};
+    --text-color: #{$text-color};
+}
+
+.dark {
+    --bg-color: #{$text-color};
+    --text-color: #{$bg-color};
+}

@@ -1,17 +1,12 @@
 @import 'colors.scss';
 
-$break-mobile: 768px;
-
-
 // Sectioning
 // ---------------------------------------------------------------------------
 
-html {
-    height: 100vh;
-    font-size: 18px;
+$break-mobile: 768px;
 
-    background-color: $bg-color;
-    color: $text-color;
+html {
+    font-size: 18px;
 
     scroll-behavior: smooth;
 
@@ -43,18 +38,30 @@ header {
 }
 
 main {
-    min-height: 80%;
-    max-width: 48rem;
-    padding: 2rem;
+    min-height: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
     margin: 0 auto;
+
+    min-height: 80%;
+    padding: 2rem;
 
     @media (max-width: $break-mobile) {
         padding: 2rem 1rem;
     }
-}
 
-section {
-    margin-bottom: 2rem;
+    >* {
+        width: 100%;
+        max-width: 48rem;
+        margin: auto;
+    }
 }
 
 footer {
@@ -110,8 +117,8 @@ caption {
 }
 
 thead {
-    color: $bg-color;
-    background-color: $text-color;
+    color: var(--bg-color);
+    background-color: var(--text-color);
 
     position: sticky;
     top: 0;
@@ -126,8 +133,8 @@ thead {
 }
 
 tfoot {
-    color: $bg-color;
-    background-color: $text-color;
+    color: var(--bg-color);
+    background-color: var(--text-color);
 
     &>tr>th:first-child {
         border-radius: 0 0 0 0.5rem;
@@ -144,7 +151,7 @@ td {
 }
 
 tr:nth-child(even) {
-    background-color: darken($bg-color, 10%);
+    background-color: brightness(var(--bg-color), 90%);
 }
 
 
