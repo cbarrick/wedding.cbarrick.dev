@@ -7,6 +7,16 @@ $body-font: "Roboto", sans-serif;
 $display-font: "Playfair Display", serif;
 $monospace-font: "Courier", monospace;
 
+:root {
+    --text-margin: 1rem;
+}
+
+section>* {
+    // <section> uses flexbox, which does overlap margins.
+    // So we cut the text margin in half to compensate.
+    --text-margin: 0.5rem;
+}
+
 
 // Elements
 // ---------------------------------------------------------------------------
@@ -19,7 +29,7 @@ html {
 h1 {
     font-family: $display-font;
     font-size: 3rem;
-    margin: 2rem 0 1rem;
+    margin: calc(3 * var(--text-margin)) 0 var(--text-margin) 0;
 
     header>& {
         font-size: 4rem;
@@ -35,7 +45,7 @@ h2 {
     font-family: $display-font;
     font-size: 2.5rem;
     font-weight: 300;
-    margin: 2rem 0 1rem;
+    margin: calc(2 * var(--text-margin)) 0 var(--text-margin) 0;
 
     @media (max-width: $break-mobile) {
         font-size: 2rem;
@@ -46,14 +56,14 @@ h3 {
     font-family: $display-font;
     font-size: 2rem;
     font-weight: normal;
-    margin: 2rem 0 1rem;
+    margin: calc(2 * var(--text-margin)) 0 var(--text-margin) 0;
 }
 
 h4 {
     font-family: $display-font;
     font-size: 1rem;
     font-weight: bold;
-    margin: 1rem 0;
+    margin: var(--text-margin) 0;
 }
 
 h5 {
@@ -61,7 +71,7 @@ h5 {
     font-size: 1rem;
     font-weight: normal;
     font-style: italic;
-    margin: 1rem 0;
+    margin: var(--text-margin) 0;
 }
 
 h6 {
@@ -69,11 +79,11 @@ h6 {
     font-size: 1rem;
     font-weight: 300;
     font-style: italic;
-    margin: 1rem 0;
+    margin: var(--text-margin) 0;
 }
 
 p {
-    margin: 1rem 0;
+    margin: var(--text-margin) 0;
 }
 
 a {
@@ -143,7 +153,7 @@ small {
 
 hr {
     width: 80%;
-    margin: 2rem auto;
+    margin: calc(2 * var(--text-margin)) auto;
     border: none; // Reset the user-agent.
     border-bottom: 1px solid $text-color;
 }
