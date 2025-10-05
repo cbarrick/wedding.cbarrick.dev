@@ -1,19 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-// Variables
+// Fonts
 // ---------------------------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 $body-font: "Roboto", sans-serif;
 $display-font: "Playfair Display", serif;
 $monospace-font: "Courier", monospace;
 
+
+// Text margin
+// ---------------------------------------------------------------------------
+// --text-margin is a CSS variable for specifying margins around text elements.
+// Note that the surrounding <header>, <footer>, <main>, and <section> elements
+// all use display:flex, so margins do NOT overlap.
+
 :root {
     --text-margin: 1rem;
 }
 
-section>* {
-    // <section> uses flexbox, which does overlap margins.
-    // So we cut the text margin in half to compensate.
+header,
+main,
+section,
+footer {
     --text-margin: 0.5rem;
 }
 
