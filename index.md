@@ -46,7 +46,7 @@ our love and commitment on our wedding day, Memorial Day weekend 2026.
   </dd>
 </dl>
 
-Shadyside Presbyterian Church and The Mansions On Fifth are a short five minute
+Shadyside Presbyterian Church and The Mansions On Fifth are a short two minute
 walk apart in the beautiful Shadyside neighborhood.
 
 </section>
