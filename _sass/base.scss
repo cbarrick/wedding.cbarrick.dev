@@ -79,7 +79,6 @@ footer {
     text-align: center;
 
     padding: 1rem;
-    margin: 2rem;
 }
 
 
@@ -104,11 +103,13 @@ ol {
 }
 
 dl {
-    margin: 1rem;
+    margin: 0 0 1.5rem 0;
+    padding: 0 0.5rem;
 }
 
 dt {
     font-weight: bold;
+    margin-top: 1.5rem;
 }
 
 dd {

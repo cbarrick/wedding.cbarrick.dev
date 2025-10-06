@@ -1,5 +1,14 @@
 @import 'colors.scss';
 
+
+// Specific element tweaks
+// ---------------------------------------------------------------------------
+
+#when-where {
+    scroll-margin-top: 6rem;
+}
+
+
 // Misc
 // ---------------------------------------------------------------------------
 
@@ -21,6 +30,7 @@
     text-decoration: none !important;
 }
 
+
 // Full Screen Section
 // ---------------------------------------------------------------------------
 // Section is stretched to fill the viewport.
@@ -34,6 +44,7 @@
 header.full-screen {
     min-height: 100vh;
 }
+
 
 // Inline List
 // ---------------------------------------------------------------------------
@@ -53,4 +64,14 @@ header.full-screen {
             margin: 0 0.5rem;
         }
     }
+}
+
+
+// Date
+// ---------------------------------------------------------------------------
+
+.event-date {
+    display: block;
+    text-align: center;
+    margin: calc(2 * var(--text-margin)) auto;
 }

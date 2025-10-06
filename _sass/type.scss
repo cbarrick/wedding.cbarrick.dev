@@ -95,16 +95,17 @@ p {
 }
 
 a {
-    color: $text-color;
+    color: var(--text-color);
     text-decoration-line: underline;
+    text-decoration-color: $link-color;
 
     svg {
-        fill: $text-color;
+        fill: var(--text-color);
     }
 
     &:hover {
+        color: $link-color;
         text-decoration-line: underline !important;
-        text-decoration-color: $link-color !important;
 
         svg {
             fill: $link-color;
@@ -113,7 +114,7 @@ a {
 }
 
 blockquote {
-    border-left: 4px solid $text-color;
+    border-left: 4px solid var(--text-color);
     padding-left: 1rem;
 }
 
@@ -163,5 +164,19 @@ hr {
     width: 80%;
     margin: calc(2 * var(--text-margin)) auto;
     border: none; // Reset the user-agent.
-    border-bottom: 1px solid $text-color;
+    border-bottom: 1px solid var(--text-color);
+}
+
+
+// Timestamps and Addresses
+// ---------------------------------------------------------------------------
+
+time {
+    font-weight: normal;
+    font-style: normal;
+}
+
+address {
+    font-weight: normal;
+    font-style: normal;
 }
