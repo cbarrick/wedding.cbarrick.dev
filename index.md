@@ -15,12 +15,13 @@ toc:
 # When & Where {#when-where}
 
 With grateful hearts and immense joy, we invite you to join us as we celebrate
-our love and commitment on our wedding day, Memorial Day weekend 2026.
+our love and commitment on our wedding day.
 
 <dl>
   <dt>When</dt>
   <dd>
-    <time datetime="2026-05-23">Saturday, May 23 2026</time>
+    <time datetime="2026-05-23">Saturday, May 23 2026</time><br/>
+    Memorial Day weekend
   </dd>
   <dt>Wedding</dt>
   <dd>
