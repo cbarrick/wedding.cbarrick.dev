@@ -1,3 +1,7 @@
+@use 'base.scss';
+@use 'colors.scss';
+
+
 // Fonts
 // ---------------------------------------------------------------------------
 
@@ -43,7 +47,7 @@ h1 {
         font-size: 4rem;
         font-weight: bold;
 
-        @media (max-width: $break-mobile) {
+        @media (max-width: base.$break-mobile) {
             font-size: 3rem; // Prevents the title from wrapping on mobile
         }
     }
@@ -55,7 +59,7 @@ h2 {
     font-weight: 300;
     margin: calc(2 * var(--text-margin)) 0 var(--text-margin) 0;
 
-    @media (max-width: $break-mobile) {
+    @media (max-width: base.$break-mobile) {
         font-size: 2rem;
     }
 }
@@ -97,18 +101,18 @@ p {
 a {
     color: var(--text-color);
     text-decoration-line: underline;
-    text-decoration-color: $link-color;
+    text-decoration-color: colors.$link-color;
 
     svg {
         fill: var(--text-color);
     }
 
     &:hover {
-        color: $link-color;
+        color: colors.$link-color;
         text-decoration-line: underline !important;
 
         svg {
-            fill: $link-color;
+            fill: colors.$link-color;
         }
     }
 }
@@ -130,7 +134,7 @@ pre {
     z-index: 1;
     font-variant-ligatures: none;
 
-    @media (max-width: $break-mobile) {
+    @media (max-width: base.$break-mobile) {
         font-size: 1rem;
     }
 
@@ -149,7 +153,7 @@ samp {
 }
 
 mark {
-    background-color: $mark-color;
+    background-color: colors.$mark-color;
 }
 
 big {

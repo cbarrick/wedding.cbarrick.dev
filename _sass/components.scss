@@ -1,4 +1,4 @@
-@import 'colors.scss';
+@use 'colors.scss';
 
 
 // Specific element tweaks
@@ -26,7 +26,7 @@
 // A link that is never colored or underlined.
 // It always overrides any other component styling.
 .silent-link {
-    color: $text-color !important;
+    color: colors.$text-color !important;
     text-decoration: none !important;
 }
 
