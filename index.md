@@ -52,7 +52,7 @@ walk apart in the beautiful Shadyside neighborhood.
 
 </section>
 
-<section class="full-screen" markdown="1">
+<section class="full-screen light" markdown="1">
 
 # Accommodation {#accommodation}
 

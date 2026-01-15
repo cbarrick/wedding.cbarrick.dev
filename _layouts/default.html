@@ -2,7 +2,7 @@
 layout: compress
 ---
 <!doctype html>
-<html lang='{{ page.lang | default: site.lang }}'>
+<html lang='{{ page.lang | default: site.lang }}' class='dark'>
 
 <head>
   <meta charset='utf-8'>
@@ -22,7 +22,7 @@ layout: compress
 
 <body>
 
-  <header class='{{ page.tall_header | replace: "true", "full-screen" }}'>
+  <header class='{{ page.tall_header | replace: "true", "full-screen" }} dark'>
     <h1><a class='quiet-link' href='{{ "/" | relative_url }}'>{{ site.title }}</a></h1>
     {% if page.toc %}
       <nav id='main-nav'>
@@ -40,7 +40,7 @@ layout: compress
     {{ content }}
   </main>
 
-  <footer class="dark">
+  <footer class='dark'>
     <ul class='inline-list'>
       {% assign copydate = page.date | default: site.time %}
       {% assign copydate_year = copydate | date: '%Y' %}
