@@ -100,6 +100,11 @@ our favorites:
 
 # RSVP {#rsvp}
 
-TODO: Make an RSVP form.
+Check back here for a full RSVP form when you recieve your formal invitation.
+
+If you already know whether you will be attending our wedding on May 23rd, 2026
+in Pittsburgh, you can let us know [by filling out this form][pre-rsvp].
+
+[pre-rsvp]: https://forms.gle/LfUGL95mvT5m6jCC8
 
 </section>
