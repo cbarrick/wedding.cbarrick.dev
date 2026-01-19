@@ -7,6 +7,7 @@ tall_header: true
 toc:
   When & Where: "#when-where"
   Accommodation: "#accommodation"
+  Travel: "#travel"
   RSVP: "#rsvp"
 ---
 
@@ -91,6 +92,36 @@ our favorites:
     4-star hotel located 6 minutes away by car or 35 minutes away by foot. They
     have a great cocktail bar and restaurant, and may be the most affordable
     hotel on this list.
+  </dd>
+</dl>
+
+<hr/>
+
+# Travel {#travel}
+
+Pittsburgh is a small city by US standards, but we do have an international
+airport! We are quite far from other major cities, so we reccomend traveling
+directly to Pittsburgh.
+
+<dl>
+  <dt>Air Travel</dt>
+  <dd>
+    We reccomend flying into Pittsburgh International Airport (PIT). Pittsburgh
+    has direct flights from most US hubs, including New York, Washington,
+    Chicago, Atlanta, and Charlotte. Internationally, you can fly to Pittsburgh
+    directly from Toronto, London, and Reykjavík.
+  </dd>
+  <dt>In Town</dt>
+  <dd>
+    Shadyside, the neighborhood of the wedding and reception, is very walkable.
+    If you plan to visit other neighborhoods, Pittsburgh has Uber, Lyft, and a
+    public transit system. The ride hailing apps will be your most reliable and
+    convenient option. If you would like to use public transit, we reccomend the
+    <a href="https://transitapp.com">Transit app</a> for planning trips and
+    purchasing fares. Pittsburg's iconic funiculars,
+    the <strong><a href="https://www.visitpittsburgh.com/directory/duquesne-incline/">Duquesne Incline</a></strong>
+    and <strong><a href="https://www.visitpittsburgh.com/directory/monongahela-incline/">Monongahela Incline</a></strong>,
+    use the same tickets as the rest of the public transit system.
   </dd>
 </dl>
 
