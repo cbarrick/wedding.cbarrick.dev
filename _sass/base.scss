@@ -1,27 +1,63 @@
 @use 'colors.scss';
 
+
+// Sizing
+// ---------------------------------------------------------------------------
+
+$break-medium: 768px;
+$break-small: 375px;
+
+
+// Fonts
+// ---------------------------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+$body-font: "Roboto", sans-serif;
+$display-font: "Playfair Display", serif;
+$monospace-font: "Courier", monospace;
+
+
+// Text margin
+// ---------------------------------------------------------------------------
+// --text-margin is a CSS variable for specifying margins around text elements.
+// Note that the surrounding <header>, <footer>, <main>, and <section> elements
+// all use display:flex, so margins do NOT overlap.
+
+:root {
+    --text-margin: 1rem;
+}
+
+header,
+main,
+section,
+footer {
+    --text-margin: 0.5rem;
+}
+
+
 // Sectioning
 // ---------------------------------------------------------------------------
 
-$break-mobile: 768px;
-
-html {
+:root {
+    font-family: $body-font;
     font-size: 18px;
+    line-height: 1.5;
 
     scroll-behavior: smooth;
     scroll-padding-top: 7vh;
 
-    @media (max-width: $break-mobile) {
+    @media (max-width: $break-medium) {
         font-size: 14px;
+    }
+
+    @media (max-width: $break-small) {
+        font-size: 12px;
     }
 
     @media (prefers-reduced-motion: reduce) {
         scroll-behavior: auto;
     }
-}
-
-body {
-    height: 100%;
 }
 
 header {
@@ -69,7 +105,7 @@ section {
     padding: 2rem;
     margin: 0 auto;
 
-    @media (max-width: $break-mobile) {
+    @media (max-width: $break-medium) {
         padding: 2rem 1rem;
     }
 
@@ -88,6 +124,165 @@ footer {
     text-align: center;
 
     padding: 1rem;
+}
+
+
+// Headings
+// ---------------------------------------------------------------------------
+
+h1 {
+    font-family: $display-font;
+    font-size: 3rem;
+    margin: calc(3 * var(--text-margin)) 0 var(--text-margin) 0;
+
+    header>& {
+        font-size: 4rem;
+        font-weight: bold;
+
+        @media (max-width: $break-medium) {
+            font-size: 3rem; // Prevents the title from wrapping on mobile
+        }
+    }
+}
+
+h2 {
+    font-family: $display-font;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin: calc(2 * var(--text-margin)) 0 var(--text-margin) 0;
+}
+
+h3 {
+    font-family: $display-font;
+    font-size: 2rem;
+    font-weight: normal;
+    margin: calc(2 * var(--text-margin)) 0 var(--text-margin) 0;
+}
+
+h4 {
+    font-family: $display-font;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: var(--text-margin) 0;
+}
+
+h5 {
+    font-family: $display-font;
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: italic;
+    margin: var(--text-margin) 0;
+}
+
+h6 {
+    font-family: $display-font;
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+    margin: var(--text-margin) 0;
+}
+
+
+// Core typographical elements
+// ---------------------------------------------------------------------------
+
+p {
+    margin: var(--text-margin) 0;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration-line: underline;
+    text-decoration-color: colors.$link-color;
+
+    svg {
+        fill: var(--text-color);
+    }
+
+    &:hover {
+        color: colors.$link-color;
+        text-decoration-line: underline !important;
+
+        svg {
+            fill: colors.$link-color;
+        }
+    }
+}
+
+blockquote {
+    border-left: 4px solid var(--text-color);
+    padding-left: 1rem;
+}
+
+cite {
+    font-style: italic;
+}
+
+pre {
+    font-family: $monospace-font;
+    font-size: 0.75rem;
+    padding: 1rem;
+    overflow-x: scroll;
+    z-index: 1;
+    font-variant-ligatures: none;
+
+    code {
+        white-space: pre;
+    }
+}
+
+mark {
+    background-color: colors.$mark-color;
+}
+
+big {
+    font-size: 1.15rem;
+}
+
+small {
+    font-size: 0.85rem;
+}
+
+hr {
+    width: 80%;
+    margin: calc(2 * var(--text-margin)) auto;
+    border: none; // Reset the user-agent style.
+    border-bottom: 1px solid var(--text-color);
+}
+
+
+// Samantic elements
+// ---------------------------------------------------------------------------
+
+time {
+    font-weight: normal;
+    font-style: normal;
+}
+
+address {
+    font-weight: normal;
+    font-style: normal;
+}
+
+code {
+    font-family: $monospace-font;
+    padding: 0 0.25rem;
+    white-space: nowrap;
+    font-variant-ligatures: none;
+}
+
+kbd {
+    font-family: $monospace-font;
+    padding: 0 0.25rem;
+    white-space: nowrap;
+    font-variant-ligatures: none;
+}
+
+samp {
+    font-family: $monospace-font;
+    padding: 0 0.25rem;
+    white-space: nowrap;
+    font-variant-ligatures: none;
 }
 
 
@@ -194,14 +389,26 @@ figcaption {
     font-size: 0.75rem;
 }
 
-canvas,
-video,
-audio,
+canvas {
+    width: 100%;
+}
+
+video {
+    width: 100%;
+}
+
+audio {
+    width: 100%;
+}
+
 iframe {
     width: 100%;
 }
 
-meter,
+meter {
+    width: 100%;
+}
+
 progress {
     width: 100%;
 }
