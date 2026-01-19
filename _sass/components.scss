@@ -26,8 +26,12 @@
 // A link that is never colored or underlined.
 // It always overrides any other component styling.
 .silent-link {
-    color: colors.$text-color !important;
+    color: var(--text-color) !important;
     text-decoration: none !important;
+
+    &:hover {
+        text-decoration: none !important;
+    }
 }
 
 
