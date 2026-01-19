@@ -14,7 +14,7 @@ toc:
 
 <section class="full-screen dark" markdown="1">
 
-# When & Where {#when-where}
+## When & Where {#when-where}
 
 With grateful hearts and immense joy, we invite you to join us as we celebrate
 our love and commitment on our wedding day.
@@ -56,7 +56,7 @@ walk apart in the beautiful Shadyside neighborhood.
 
 <section class="full-screen light" markdown="1">
 
-# Accommodation {#accommodation}
+## Accommodation {#accommodation}
 
 The wedding party and immediate family are invited to stay with us at
 <a href="https://mansionsonfifth.com" target="_blank">**The Mansions On Fifth**</a>.
@@ -98,7 +98,7 @@ our favorites:
 
 <hr/>
 
-# Travel {#travel}
+## Travel {#travel}
 
 Pittsburgh is a small city by US standards, but we do have an international
 airport! We are quite far from other major cities, so we reccomend traveling
@@ -130,7 +130,7 @@ directly to Pittsburgh.
 
 <section class="full-screen dark" markdown="1">
 
-# RSVP {#rsvp}
+## RSVP {#rsvp}
 
 Check back here for a full RSVP form when you recieve your formal invitation.
 
