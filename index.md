@@ -119,7 +119,7 @@ directly to Pittsburgh.
     public transit system. The ride hailing apps will be your most reliable and
     convenient option. If you would like to use public transit, we reccomend the
     <a href="https://transitapp.com">Transit app</a> for planning trips and
-    purchasing fares. Pittsburg's iconic funiculars,
+    purchasing fares. Pittsburgh's iconic funiculars,
     the <strong><a href="https://www.visitpittsburgh.com/directory/duquesne-incline/">Duquesne Incline</a></strong>
     and <strong><a href="https://www.visitpittsburgh.com/directory/monongahela-incline/">Monongahela Incline</a></strong>,
     use the same tickets as the rest of the public transit system.
