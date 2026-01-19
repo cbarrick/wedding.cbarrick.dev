@@ -244,7 +244,7 @@ small {
 }
 
 hr {
-    width: 80%;
+    transform: scale(80%, 1);
     margin: calc(2 * var(--text-margin)) auto;
     border: none; // Reset the user-agent style.
     border-bottom: 1px solid var(--text-color);
